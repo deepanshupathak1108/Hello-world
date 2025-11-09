@@ -1,0 +1,43 @@
+/* Universal Selector to reset some browser defaults */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Element Selector for the body */
+body {
+  background-color: #f4f4f4;
+  background-image: url('images/background-pattern.png'); /* Assumes an image exists */
+  background-repeat: repeat;
+}
+
+/* ID Selector */
+#main-heading {
+  color: #333;
+  text-align: center;
+}
+
+/* Class Selector */
+.intro-text {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Element Selector for lists */
+ul {
+  list-style-type: square; /* Changes bullets to squares */
+}
+
+/* Pseudo-class Selector */
+a:hover {
+  color: tomato;
+}
+
+/* Box Model Example */
+.box-model-example {
+  width: 80%;
+  background-color: #ffffff;
+  border: 2px solid navy;
+  padding: 25px;
+  margin: 20px auto; /* 'auto' centers the block horizontally */
+  text-align: center;
+}

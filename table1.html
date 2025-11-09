@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Table Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        #data-e, #data-f {
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Example Table</h2>
+    <p>This table has 6 data cells (A-F). The cells for "E" and "F" are hidden using <code>visibility: hidden;</code>, so their space is still reserved in the layout.</p>
+
+    <!-- The Table Structure -->
+    <table border="2"  cellpadding="2" cellspacing="2">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>A</td>
+                <td>B</td>
+                <td>C</td>
+            </tr>
+            <tr>
+                <td>D</td>
+                <!-- 
+                  We give the cells we want to hide unique IDs 
+                  so we can easily target them with CSS.
+                -->
+                <td id="data-e">E</td>
+                <td id="data-f">F</td>
+            </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td>G</td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

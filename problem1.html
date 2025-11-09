@@ -1,0 +1,40 @@
+<!-- Create a web page with four <p> elements and two <div> elements with different background color and hide the second <p> and second <div> element without changing the layout of the page. and provide different background to each <p> and <div> element. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 1 </title>
+    <style>
+        #para1 {
+            background-color: cyan;
+        }
+        #para2 {
+            background-color: yellow;
+            visibility: hidden;
+        }
+        #para3 {
+            background-color: red;
+        }
+        #para4 {
+            background-color: blue;
+        }
+        #main1 {
+            background-color: lightgray;
+        }
+        #main2 {
+            background-color: pink;
+           visibility: hidden; 
+        }
+    </style>
+</head>
+<body>
+    <p id ="para1">This is paragraph first </p>
+    <p id ="para2">This is second paragraph </p>
+    <p id ="para3">This is third paragraph </p>
+    <p id ="para4">This is fourth paragraph </p>
+
+    <div id ="main1">This is the first div element</div>
+    <div id ="main2">This is the second div element</div>
+</body>
+</html>
